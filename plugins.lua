@@ -1,5 +1,3 @@
-local overrides = require("custom.configs.overrides")
-
 ---@type NvPluginSpec[]
 local plugins = {
 
@@ -25,12 +23,12 @@ local plugins = {
   -- overrde plugin configs
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = overrides.treesitter,
+    opts = require("custom.configs.treesitter").treesitter,
   },
 
   {
     "nvim-tree/nvim-tree.lua",
-    opts = overrides.nvimtree,
+    opts = require("custom.configs.nvimtree").nvimtree,
   },
 
   -- Install a plugin
