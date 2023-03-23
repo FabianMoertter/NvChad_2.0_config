@@ -65,6 +65,12 @@ local plugins = {
   end
   },
 
+  -- Nextflow syntax hightlighting
+  {
+    'Mxrcon/nextflow-vim',
+    lazy = false,
+  }
+
 }
 
 return plugins
